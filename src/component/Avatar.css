@@ -1,0 +1,45 @@
+:root {
+    --avatar-size: 1.75rem;
+    /* change this value anything, e.g., 100px, 10rem, etc. */
+  }
+.avatar__circle{
+    position: relative;
+    background-color: #ccc;
+    border-radius: 50%;
+    height: var(--avatar-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    width: var(--avatar-size);
+}
+.avatar__circle__initials{
+    font-size: calc(var(--avatar-size) / 2);
+    /* line-height: 0.75; */
+    /* position: relative; */
+    /* top: calc(var(--avatar-size) / 4); */
+    font-weight: 600;
+    color: white;
+}
+.avatar__circle__status__inactive{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* top: ; */
+    background-color: #ccc;
+    border-radius: 50%;
+    height: 0.5rem;
+    width: 0.5rem;
+    outline: 3px solid white;
+}
+.avatar__circle__status__active{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* top: ; */
+    background-color: greenyellow;
+    border-radius: 50%;
+    height: 0.5rem;
+    width: 0.5rem;
+    outline: 3px solid white;
+}
